@@ -1,0 +1,1678 @@
+body {
+    /* background: linear-gradient(to bottom, rgb(8, 0, 24)10%, rgb(82, 14, 241), rgba(0, 0, 0, 0.87)); */
+    background-image:  linear-gradient(to bottom, rgba(8, 0, 24, 0.904)3%, rgba(18, 1, 53, 0.918)10%, rgb(115, 59, 245), rgba(0, 226, 196, 0.938)45%), url(../assets/fundo1.png);
+   
+    background-size: contain;
+ 
+}
+
+.nuvem {
+    width: 600px;
+    position: absolute;
+    z-index: -1;
+    top: 110px;
+    left: -400px;
+}
+
+.nuvem2 {
+    width: 600px;
+    position: absolute;
+    z-index: -1;
+    top: -110px;
+    left: 850px;
+}
+
+.header .container {
+    width: 80%;
+}
+
+.header {
+    padding: 15px 0;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    /* ou da pra colocar width 100% no lugar do left right 0. Caso contrário, o header sai do 
+    meio e fica fixo no canto*/
+}
+
+.header .container {
+    height: 100px;
+    padding: 0;
+}
+
+.header img {
+    max-width: 250px;
+    display: inherit;
+}
+
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+    margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+    display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+    background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+    font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+    display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+    display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+    display: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+
+.container:after,
+.container:before {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16,
+.grid-1-3 {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.grid-1 {
+    width: 40px;
+}
+
+.grid-2 {
+    width: 100px
+}
+
+.grid-3 {
+    width: 160px;
+}
+
+.grid-4 {
+    width: 220px;
+}
+
+.grid-5 {
+    width: 280px;
+}
+
+.grid-6 {
+    width: 340px;
+}
+
+.grid-7 {
+    width: 400px;
+}
+
+.grid-8 {
+    width: 460px;
+}
+
+.grid-9 {
+    width: 520px;
+}
+
+.grid-10 {
+    width: 580px;
+}
+
+.grid-11 {
+    width: 640px;
+}
+
+.grid-12 {
+    width: 700px;
+}
+
+.grid-13 {
+    width: 760px;
+}
+
+.grid-14 {
+    width: 820px;
+}
+
+.grid-15 {
+    width: 880px;
+}
+
+.grid-16 {
+    width: 940px;
+}
+
+.grid-1-3 {
+    width: 300px;
+}
+
+/* no html: 
+  
+  <section class="gridlayout">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+  </section> */
+
+/* .gridlayout {
+      width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px
+  } */
+
+/* no html: 
+  
+  <section class="gridlayout">
+      <div>item 1</div>
+      <div>item 2</div> 
+      <div class="div3"> item 3 </div>
+  </section> */
+/* 
+  .div3{
+      grid-column: 2;
+      grid-row: 1;
+  } */
+
+
+/* TAMANHO MEDIO  */
+/* @media only screen and (min-width:768px) and (max-width: 959px) { */
+@media only screen and (min-width:768px) and (max-width: 979px) {
+
+    .container {
+        width: 788px;
+    }
+
+    .grid-1 {
+        width: 28px;
+    }
+
+    .grid-2 {
+        width: 76px;
+    }
+
+    .grid-3 {
+        width: 124px;
+    }
+
+    .grid-4 {
+        width: 172px;
+    }
+
+    .grid-5 {
+        width: 220px;
+    }
+
+    .grid-6 {
+        width: 268px;
+    }
+
+    .grid-7 {
+        width: 316px;
+    }
+
+    .grid-8 {
+        width: 364px;
+    }
+
+    .grid-9 {
+        width: 412px;
+    }
+
+    .grid-10 {
+        width: 460px;
+    }
+
+    .grid-11 {
+        width: 508px;
+    }
+
+    .grid-12 {
+        width: 556px;
+    }
+
+    .grid-13 {
+        width: 604px;
+    }
+
+    .grid-14 {
+        width: 652px;
+    }
+
+    .grid-15 {
+        width: 700px;
+    }
+
+    .grid-16 {
+        width: 748px;
+    }
+
+    .grid-1-3 {
+        width: 236px;
+    }
+}
+
+
+/* MOBILE:  */
+@media only screen and (max-width:787px) {
+    .container {
+        width: 300px;
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12,
+    .grid-13,
+    .grid-14,
+    .grid-15,
+    .grid-16,
+    .grid-1-3 {
+        width: 300px;
+        margin: 0;
+    }
+}
+
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+
+.container:after,
+.container:before {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16,
+.grid-1-3 {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.grid-1 {
+    width: 40px;
+}
+
+.grid-2 {
+    width: 100px
+}
+
+.grid-3 {
+    width: 160px;
+}
+
+.grid-4 {
+    width: 220px;
+}
+
+.grid-5 {
+    width: 280px;
+}
+
+.grid-6 {
+    width: 340px;
+}
+
+.grid-7 {
+    width: 400px;
+}
+
+.grid-8 {
+    width: 460px;
+}
+
+.grid-9 {
+    width: 520px;
+}
+
+.grid-10 {
+    width: 580px;
+}
+
+.grid-11 {
+    width: 640px;
+}
+
+.grid-12 {
+    width: 700px;
+}
+
+.grid-13 {
+    width: 760px;
+}
+
+.grid-14 {
+    width: 820px;
+}
+
+.grid-15 {
+    width: 880px;
+}
+
+.grid-16 {
+    width: 940px;
+}
+
+.grid-1-3 {
+    width: 300px;
+}
+
+/* no html: 
+  
+  <section class="gridlayout">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+  </section> */
+
+/* .gridlayout {
+      width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px
+  } */
+
+/* no html: 
+  
+  <section class="gridlayout">
+      <div>item 1</div>
+      <div>item 2</div> 
+      <div class="div3"> item 3 </div>
+  </section> */
+/* 
+  .div3{
+      grid-column: 2;
+      grid-row: 1;
+  } */
+
+
+/* TAMANHO MEDIO  */
+/* @media only screen and (min-width:768px) and (max-width: 959px) { */
+@media only screen and (min-width:768px) and (max-width: 979px) {
+
+    .container {
+        width: 788px;
+    }
+
+    .grid-1 {
+        width: 28px;
+    }
+
+    .grid-2 {
+        width: 76px;
+    }
+
+    .grid-3 {
+        width: 124px;
+    }
+
+    .grid-4 {
+        width: 172px;
+    }
+
+    .grid-5 {
+        width: 220px;
+    }
+
+    .grid-6 {
+        width: 268px;
+    }
+
+    .grid-7 {
+        width: 316px;
+    }
+
+    .grid-8 {
+        width: 364px;
+    }
+
+    .grid-9 {
+        width: 412px;
+    }
+
+    .grid-10 {
+        width: 460px;
+    }
+
+    .grid-11 {
+        width: 508px;
+    }
+
+    .grid-12 {
+        width: 556px;
+    }
+
+    .grid-13 {
+        width: 604px;
+    }
+
+    .grid-14 {
+        width: 652px;
+    }
+
+    .grid-15 {
+        width: 700px;
+    }
+
+    .grid-16 {
+        width: 748px;
+    }
+
+    .grid-1-3 {
+        width: 236px;
+    }
+}
+
+
+/* MOBILE:  */
+@media only screen and (max-width:787px) {
+    .container {
+        width: 300px;
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12,
+    .grid-13,
+    .grid-14,
+    .grid-15,
+    .grid-16,
+    .grid-1-3 {
+        width: 300px;
+        margin: 0;
+    }
+}
+
+
+
+
+.interna-sobre {
+    background: url(../assets/5-1-9-sobre_arquivos/web/img/bg-sobre.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.missao-sobre {
+    padding: 60px 0 0 0;
+}
+
+.missao-sobre p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 60px;
+}
+
+.missao-sobre ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.foto-equipe {
+    padding-top: 20px;
+}
+
+.missao-sobre h2::after {
+    margin: 10px 0 30px 0;
+}
+
+
+.interna-portifolio {
+    background: url(../assets/5-1-9-sobre_arquivos/web/img/bg-portfolio.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.quote-clientes {
+    padding: 60px 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quote-clientes p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    text-align: center;
+
+
+}
+
+.quote-clientes cite {
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    font-style: none;
+    margin-top: 20px;
+}
+
+
+.interna-portifolio {
+    background: url(../assets/5-1-9-sobre_arquivos/web/img/bg-portfolio.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.quote-clientes {
+    padding: 60px 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quote-clientes p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    text-align: center;
+
+
+}
+
+.quote-clientes cite {
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    font-style: none;
+    margin-top: 20px;
+}
+
+
+
+.interna-portifolio {
+    background: url(../assets/5-1-9-sobre_arquivos/web/img/bg-portfolio.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.quote-clientes {
+    padding: 60px 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quote-clientes p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    text-align: center;
+
+
+}
+
+.quote-clientes cite {
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    font-style: none;
+    margin-top: 20px;
+}
+
+/* TABLET  */
+/* @media only screen and (min-width:768px) and (max-width: 959px) { */
+@media only screen and (min-width:768px) and (max-width: 979px) {}
+
+/* MOBILE:  */
+@media only screen and (max-width:787px) {
+    .header {
+        position: relative;
+    }
+
+    .header img {
+        margin: 0 auto 20px auto;
+    }
+
+    .navbar {
+        text-align: center;
+        display: block;
+        color: white;
+    }
+
+    .navbar ul li a {
+        border: 4px solid black;
+        width: 140px;
+        display: block;
+        float: left;
+        color: white;
+    }
+
+    .navbar ul li {
+        margin: 0%;
+    }
+
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img {
+    display: block;
+}
+
+/* entenda acima!!  */
+
+.btn {
+    border: 3px solid #09a9da;
+    padding: 15px 30px;
+    color: #09a9da;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* .produtos .call-to-action .btn:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.qualidade .call-to-action .btn:hover {
+    color: #000;
+    border-color: #000;
+} */
+
+/* 2 jeitos possiveis: acima ou abaixo 
+acima indica onde ele ta dentro, abaixo cria uma segunda classe, ou seja vai usar as propriedades da primeira classe mas as da segunda vao sobrepor a proimeira em alguma porpriedade especifica*/
+
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+
+
+
+.navbar {
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+.navbar .ativo {
+    color: white;
+}
+
+.introducao {
+    width: 100%;
+    height: 380px;
+    /* background: url("../assets/5-1-4-introducao-home_arquivos/web/img/bg.jpg") no-repeat center; */
+    background-size: cover;
+    margin-top: 92px;
+    text-align: center;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto;
+}
+
+/* porque quando colocava width ele nao consegue mais alinhar com text align?? */
+.quote-externo {
+    max-width: 360px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.quote-externo p {
+font-size: 28px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+letter-spacing: normal;
+    font-style: normal;
+}
+
+
+.quote-externo cite {
+    
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.produtos-lista li {
+
+    text-align: center;
+}
+
+.produtos {
+    padding: 60px 0;
+}
+
+.produtos-lista_img {
+    text-align: center;
+    align-items: center;
+    padding-left: 15%;
+}
+
+.produtos-lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding-top: 15px;
+}
+
+.produtos-lista li h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    margin: 8px auto auto;
+}
+
+.produtos-lista p {
+    padding: 10px 20px 20px 20px;
+}
+
+.call-to-action {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.call-to-action p {
+    margin-bottom: 40px;
+}
+
+/* atençãooo coisa nova acima clear both */
+
+.portifolio {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0;
+}
+
+.portiflio .subtitulo {
+    background-color: #fec630;
+}
+
+.portiflio .subtitulo::after {
+    background-color: #fec630;
+}
+
+.portifolio-lista li:last-child {
+    margin-top: 20px;
+}
+
+.portifolio .call-to-action p {
+    color: #fff;
+}
+
+.qualidade {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.qualidade::after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../assets/5-1-7-qualidade-home_arquivos/web/img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+}
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade-lista {
+    padding-top: 40px;
+    overflow: auto;
+    /* ou hidden  */
+}
+
+.qualidade-lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.qualidade-lista li h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    margin: 6px auto;
+}
+
+.quebra {
+    width: 100%;
+    height: 220px;
+    background-image: url(../assets/5-1-8-footer_arquivos/web/img/bg-footer.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* pode usar background e colocaar tudo nele já (mas tem suas desvantagens), ou fazer separadinho */
+
+.quebra .quote-externo {
+    max-width: 400px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #fec630;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 25px 0;
+}
+
+.footer h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fec630;
+    margin: 10px 0 12px 0
+}
+
+.footer-historia {
+    padding-right: 40px;
+}
+
+.footer-contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-redes ul li {
+    /* float: left; (da pra fazer com inline block) */
+    display: inline-block;
+    margin-right: 10px;
+
+
+}
+
+.footer-redes ul li a {
+    display: block;
+    border: 3px solid #fec630;
+    padding: 10px;
+}
+
+.footer-redes ul li a:hover {
+    border-color: #fff;
+}
+
+.copy {
+    width: 100%;
+    background-color: #fec630;
+    padding: 20px 0;
+}
+
+/* javascript */
+
+.fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+.fadeInUp {
+    transform: translate3d(0, 20px, 0);
+}
+
+.fadeInRight {
+    transform: translate3d(20px, 0, 0);
+}
+
+.fadeInLeft {
+    transform: translate3d(-20px, 0, 0);
+}
+
+/* 7 Adicione o CSS Essencial abaixo */
+[data-anime] {
+    opacity: 0;
+}
+
+.anime {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+}
+
+
+.header .container {
+    margin: 0%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    margin-left: -400px;
+    margin-top: 5px;
+}
+
+.navbar {
+    margin-left: -800px;
+}
+
+.produtos .container {
+    width: 1000px;
+}
+
+.logao {
+    height: 600px;
+    margin-top: -100px;
+    margin-left: 150px;
+}
+
+.introducao h1 {
+
+}
+
+.introducao {
+    height: 70%;
+    padding-bottom: 400px;
+}
+
+.fundo {
+    position: absolute;
+    z-index: 1;
+    size: cover;
+
+}
+
+.introducao h2{
+    margin-top: 100px;
+    text-transform: none;
+    letter-spacing: .1em;
+}
+
+a .btn {
+    border-radius: 5px;
+    padding: 50 0;
+}
+
+.portiflio {
+    color: rgb(75, 7, 163);
+}

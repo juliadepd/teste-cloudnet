@@ -1,0 +1,112 @@
+.interna-contato {
+    background: url(../assets/5-2-6-produtos_arquivos/web/img/bg-produtos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+/* ORÇAMENTO */
+
+#contato-form {
+    padding-right: 60px;
+}
+
+/* pesquisar */
+.contato form label {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.contato {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0 40px 0
+}
+
+.contato h2 {
+    color: #fec630;
+}
+
+.contato h2::after {
+    background-color: #fec630;
+}
+
+form input, form textarea {
+    background-color: blue;
+    display: block;
+    width: 100%;
+    border: 4px solid #fec630;
+    background: none;
+    color: rgb(0, 0, 0);
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form textarea {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+form button {
+    background: none;
+    padding: 7px 40px;
+}
+
+.contato-dados {
+    background-color: rgb(255, 255, 255);
+}
+
+.contato-dados h3 {
+    color: #fec630;
+}
+
+.contato-dados span {
+    display: block;
+}
+
+.contato-dados ul li {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 10px 10px 0;
+}
+
+.contato-dados p {
+    margin: 8px 0;
+}
+
+.contato-dados ul {
+    padding-right:  60px;
+    align-items: left;
+    margin-top: 10px;
+}
+
+.contato-dados ul li {
+    /* float: left; (da pra fazer com inline block) */
+    display: inline-block;
+    margin-right: 10px;
+ }
+ 
+ .contato-dados ul li a {
+     display: block;
+     border: 3px solid #fec630;
+     padding: 10px;
+ }
+ 
+ .contato-dados ul li a:hover {
+   border-color: rgb(0, 0, 0);
+ }
+
+ .contato .btn:hover {
+   border-color: black;
+   background-color: none;
+ }
+
+ .contato-dados span:nth-of-type(even) {
+    margin-bottom: 40px;
+ }
+
+ 
